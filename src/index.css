@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  --app-container: 960px;
+  --app-radius: 0.75rem;
+  --app-radius-lg: 1rem;
+  --app-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --app-focus-ring: 2px solid theme(colors.emerald.500);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
